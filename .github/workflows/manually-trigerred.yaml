@@ -1,6 +1,14 @@
 name: Manually Triggered
 on:
   workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Environment to deploy to'
+        required: true
+        default: 'staging'
+      tag:
+        description: 'Tag to deploy'
+        required: false
 
 jobs:
   log-info:
@@ -9,3 +17,5 @@ jobs:
       - run: |
           echo $GITHUB_SHA
           echo $GITHUB_REF
+          echo ${{ github.event.inputs.environment }}
+          echo ${{ github.event.inputs.tag }}
