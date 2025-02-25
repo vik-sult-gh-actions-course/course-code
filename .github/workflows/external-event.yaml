@@ -1,0 +1,12 @@
+name: External Events
+on:
+  repository_dispatch:
+    
+jobs:
+    echo-info:
+        runs-on: ubuntu-latest
+        steps:
+            - run: |
+                echo $GITHUB_SHA
+                echo $GITHUB_REF
+                echo 'Repository Dispatch Event'
