@@ -10,3 +10,5 @@ jobs:
                 echo $GITHUB_SHA
                 echo $GITHUB_REF
                 echo 'Repository Dispatch Event'
+                echo ${{ github.event.client_payload.environment }}
+                echo ${{ github.event.client_payload.tag }}
