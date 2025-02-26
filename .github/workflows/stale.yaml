@@ -1,0 +1,16 @@
+name: Stale Issues & PRs
+on:
+  schedule:
+    - cron: '0/10 * * * *'
+jobs:
+    stale:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout Stale
+              uses: actions/stale@v8
+              with:
+                  repo-token: ${{ secrets.GITHUB_TOKEN }}
+                  stale-issue-message: 'This issue is stale'
+                  stale-pr-message: 'This PR is stale'
+                  days-before-stale: 1
+                  days-before-close: 5
