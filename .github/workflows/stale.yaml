@@ -12,5 +12,6 @@ jobs:
         with:
           stale-issue-message: "This is stale Issue message."
           stale-pr-message: "This is stale PR message."
+          labels-to-add-when-unstale: "unstale"
           days-before-stale: 1
           days-before-close: 5
