@@ -26,3 +26,7 @@ jobs:
           echo $STEP_LEVEL_ENV
           echo $WF_LEVEL_ENV
           echo $JOB_LEVEL_ENV
+          echo $GITHUB_ACTOR
+          echo $GITHUB_REPOSITORY
+          echo $GITHUB_ACTOR_ID
+          echo $GITHUB_WORKFLOW
