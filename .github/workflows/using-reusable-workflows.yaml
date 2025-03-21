@@ -9,13 +9,14 @@ on:
         required: false
 jobs:
   calling-a-reusable-wf:
-    uses: vik-sult-gh-actions-course/workflows/.github/workflows/reusable.yaml@main
+    uses: github-actions-course/workflows/.github/workflows/reusable.yaml@main
     with:
       name: ${{ inputs.name }}
     secrets:
       access-token: ${{ secrets.ACCESS_TOKEN }}
   calling-a-reusable-wf-in-the-same-repo:
     uses: ./.github/workflows/reusable-workflow.yaml
+    secrets: inherit
   using-reusable-wf-output:
     runs-on: ubuntu-latest
     needs: calling-a-reusable-wf-in-the-same-repo
