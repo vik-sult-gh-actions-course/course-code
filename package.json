@@ -1,0 +1,25 @@
+{
+  "name": "course-code",
+  "version": "1.0.0",
+  "description": "https://udemy.com/course/github-actions/learn/lecture/37906330#overview",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vik-sult-gh-actions-course/course-code.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vik-sult-gh-actions-course/course-code/issues"
+  },
+  "homepage": "https://github.com/vik-sult-gh-actions-course/course-code#readme",
+  "dependencies": {
+    "axios": "^1.8.4",
+    "lodash": "^4.17.21",
+    "moment": "^2.30.1"
+  }
+}
