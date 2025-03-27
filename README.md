@@ -13,3 +13,6 @@ Run tests
 npx jest --coverage
 
 course-code/coverage/lcov-report/index.html
+
+
+https://hub.docker.com/r/technosophos/slack-notify/
