@@ -3,12 +3,7 @@ on:
   repository_dispatch:
     types: [build]
 jobs:
-    echo-info:
-        runs-on: ubuntu-latest
-        steps:
-            - run: |
-                echo $GITHUB_SHA
-                echo $GITHUB_REF
-                echo 'Repository Dispatch Event'
-                echo ${{ github.event.client_payload.environment }}
-                echo ${{ github.event.client_payload.tag }}
+  echo-a-string:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo ${{ github.event.client_payload.env }}

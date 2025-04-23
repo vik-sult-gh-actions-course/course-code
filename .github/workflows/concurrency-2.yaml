@@ -1,4 +1,3 @@
-
 name: Concurrency 2
 run-name: Concurrency 2 (${{ inputs.environment }})
 on:

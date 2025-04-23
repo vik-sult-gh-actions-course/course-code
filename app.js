@@ -1,3 +1,6 @@
-alert('Hello World!');
-alert('Hello World!');
-alert('Hello World!');
+alert(true);
+alert(true);
+alert(true);
+alert(true);
+alert(true);
+alert(true);

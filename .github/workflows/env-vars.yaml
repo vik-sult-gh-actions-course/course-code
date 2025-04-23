@@ -1,4 +1,3 @@
-
 name: Environment Variables
 on: [push]
 
@@ -38,9 +37,5 @@ jobs:
           echo $STEP_LEVEL_ENV
           echo $WF_LEVEL_ENV
           echo $JOB_LEVEL_ENV
-          echo $GITHUB_ACTOR
-          echo $GITHUB_REPOSITORY
-          echo $GITHUB_ACTOR_ID
-          echo $GITHUB_WORKFLOW
           echo $NEW_ENV_VAR
           echo $RANDOM_JOKE
