@@ -16,3 +16,6 @@ course-code/coverage/lcov-report/index.html
 
 
 https://hub.docker.com/r/technosophos/slack-notify/
+
+git add --chmod=+x entrypoint.sh cleanup.sh
+
